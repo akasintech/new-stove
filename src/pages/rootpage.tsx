@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import qr from "../assets/qr-code.png";
-import blob from "../assets/blob-blur.svg";
 import google from "../assets/app-store-google-4d63c31a3e.svg";
 import apple from "../assets/app-store-apple-f1f919205b.svg";
 
@@ -95,11 +94,7 @@ export default function RootPage() {
         
         </div>
       </div>
-      <img
-          src={blob}
-          alt=""
-          className="absolute -z[10] left-0 top-0 opacity-35"
-        />
+      
       <div className="py-12 bg-accent md:px-7 px-3 lg:px-16 *:relative *:z-10">
             <h1 className=" md:text-[3.5rem] mb-5 text-[2.05rem] font-medium *:scroll-m-20 *:tracking-tight">Request or subscribe to a service</h1>
             <p className="max-w-[600px] py-5">
