@@ -10,7 +10,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import { Button } from "./components/ui/button";
 import { ChevronDown, MenuIcon, XCircleIcon } from "lucide-react";
-import qr from "./assets/qr-code.svg"
+import qr from "./assets/qr-code.png"
 import google from "./assets/icon_google-play_16px.svg"
 import apple from "./assets/apple_logo.svg"
 export default function Navbar() {
@@ -48,7 +48,7 @@ export default function Navbar() {
       ref={ref}
       className="w-full flex justify-center items-center px-5 lg:px-10 py-5 absolute top-0 z-[1000] left-0 "
     >
-      <NavigationMenu className="bg-accent shadow-lg z-[1000] rounded-[50px] px-4 lg:w-[90%] md:w-[95%] py-2 w-full flex justify-between items-center max-w-[1000px]">
+      <NavigationMenu className="bg-accent shadow-lg z-[1000] rounded-[50px] px-4 lg:w-[90%] md:w-[95%] py-2 w-full flex justify-between items-center max-w-[1120px]">
         <div className="md:mr-5 lg:mr-10">
           <Link to="/">
             <img
@@ -66,7 +66,19 @@ export default function Navbar() {
               : "opacity-100 duration-500 md:flex justify-center bg-accent items-center rounded-lg md:p-0 p-5 block *:mb-4 *:md:mb-0 absolute md:relative h-[100vh] w-full top-[105%] z-[2000] left-0"
           }
         >
-          <NavigationMenuList className="md:flex block justify-self-center *:mb-4 *:md:mb-0">
+          <NavigationMenuList className="md:flex block md:justify-self-center *:mb-4 *:md:mb-0">
+          <NavigationMenuItem>
+              <NavLink
+                to="home"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-medium text-[0.9rem] lg:px-4 px-[6px]"
+                    : "hover:text-primary font-medium text-[0.9rem] lg:px-4 px-[6px]"
+                }
+              >
+                Home
+              </NavLink>
+            </NavigationMenuItem>
             <NavigationMenuItem className="relative">
               <NavigationMenuTrigger className="bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
                 Services

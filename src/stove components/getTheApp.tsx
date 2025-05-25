@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import qr from "../assets/qr-code.svg"
+import qr from "../assets/qr-code.png";
 import mobileApp from "../assets/mobile_app.webp"
 export default function GetTheApp() {
     return (

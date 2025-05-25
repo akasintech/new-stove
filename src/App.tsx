@@ -19,6 +19,7 @@ import { useState } from "react";
 import Admin from "./pages/admin.tsx";
 import AdminLogin from "./pages/adminLogin.tsx";
 import Edit from "./pages/Edit.tsx";
+import RootPage from "./pages/rootpage.tsx";
 function App() {
    const [adminAuth, setAdminAuth] = useState<boolean | null>(false);
   return (
@@ -26,7 +27,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Homepage />} />
+            <Route index element={<RootPage />} />
+            <Route path="home" element={<Homepage />} />
+            <Route path="petroleum" element={<PetroleumPage />} />
             <Route path="refill" element={<PetroleumPage />} />
             <Route path="community" element={<Community />} />
             <Route path="waste-disposal" element={<WastePage />} />

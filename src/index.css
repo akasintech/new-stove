@@ -96,7 +96,7 @@
   -moz-background-clip: text;
   }
 .fleet-heading{
-  background: linear-gradient(45deg, hsl(48, 52%, 80%), hsl(48.1 89.2% 56.3%));
+  background: linear-gradient(45deg, hsl(48, 52%, 80%), hsl(48, 89%, 56%));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

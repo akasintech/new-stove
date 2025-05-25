@@ -1,4 +1,4 @@
-import qr from "../assets/qr-code.svg";
+import qr from "../assets/qr-code.png";
 import { Button } from "@/components/ui/button";
 
 export default function ScanToDownload() {
