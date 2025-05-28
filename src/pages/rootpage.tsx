@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import qr from "../assets/qr-code.png";
 import google from "../assets/app-store-google-4d63c31a3e.svg";
 import apple from "../assets/app-store-apple-f1f919205b.svg";
+import { ArrowRight } from "lucide-react";
 
 export default function RootPage() {
   return (
@@ -15,10 +16,10 @@ export default function RootPage() {
           Waste or get some food or other items delivered and shipped abroad,
           all you have to do is open an Stove app. Let’s get you started.
         </p>
-        <div className="*:w-full *:relative *:z-10 *:text-center mt-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-center">
+        <div className="*:w-full *:relative *:z-10 *:md:text-center mt-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-center">
         <a href="https://stove.com.ng/register.php" target="_blank" rel="noopener noreferrer">
          <Card className="md:*:h-[350px]">
-        <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.6rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
+        <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.3rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
             <div className=" dark:bg-accent-foreground w-fit hidden md:flex mt-12 rounded-lg">
               <img src={qr} className="max-w-[180px]" />
             </div>
@@ -28,8 +29,12 @@ export default function RootPage() {
                 className="max-w-[80px] dark:bg-accent-foreground px-2 py-1 rounded-lg"
               />
             </div>
-            <div>
-              <p className="font-medium">Buy Gasoline Products</p>
+            <div className="flex justify-between items-center w-full">
+              <div>
+              <p className="font-medium">Gasoline Products</p>
+              <p className="text-sm font-normal opacity-75">Request for cooking Gas, Petrol, diesel, CNG, Kerosene refill</p>
+              </div>
+              <ArrowRight className="font-medium md:hidden"/>
             </div>
           </div>
           </Card>
@@ -37,7 +42,7 @@ export default function RootPage() {
         
         <a href="https://stove.com.ng/register.php" target="_blank" rel="noopener noreferrer"> 
             <Card className="md:*:h-[350px]">
-          <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.6rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
+          <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.3rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
             <div className=" dark:bg-accent-foreground w-fit hidden md:flex mt-12 rounded-lg">
               <img src={qr} className="max-w-[180px]" />
             </div>
@@ -47,8 +52,12 @@ export default function RootPage() {
                 className="max-w-[80px] dark:bg-accent-foreground px-2 py-1 rounded-lg"
               />
             </div>
-            <div>
+            <div className="flex justify-between items-center w-full">
+              <div>
               <p className="font-medium">Pay Bills</p>
+              <p className="text-sm font-normal opacity-75">Buy airtime, data, TV Subscribtions and electricity bills</p>
+              </div>
+              <ArrowRight className="font-medium md:hidden"/>
             </div>
           </div>
           </Card>
@@ -56,7 +65,7 @@ export default function RootPage() {
           
         <a href="https://stove.com.ng/register.php" target="_blank" rel="noopener noreferrer">
         <Card className="md:*:h-[350px]">
-         <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.6rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
+         <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.3rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
             <div className=" dark:bg-accent-foreground w-fit hidden md:flex mt-12 rounded-lg">
               <img src={qr} className="max-w-[180px]" />
             </div>
@@ -66,8 +75,12 @@ export default function RootPage() {
                 className="max-w-[80px] dark:bg-accent-foreground px-2 py-1 rounded-lg"
               />
             </div>
-            <div>
+            <div className="flex justify-between items-center w-full">
+              <div>
               <p className="font-medium">Waste Disposal</p>
+              <p className="text-sm font-normal opacity-75">Order a trasher to dispose househol, business and industrial wastes</p>
+              </div>
+              <ArrowRight className="font-medium md:hidden"/>
             </div>
           </div>
          </Card>
@@ -75,7 +88,7 @@ export default function RootPage() {
          
          <a href="https://stove.com.ng/register.php" target="_blank" rel="noopener noreferrer">
           <Card className="md:*:h-[350px]">
-         <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.6rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
+         <div className="w-full md:gap-4 md:justify-center font-medium md:text-[2rem] text-[1.3rem] flex-row md:flex-col flex p-2 justify-start gap-2 items-center">
             <div className=" dark:bg-accent-foreground w-fit hidden md:flex mt-12 rounded-lg">
               <img src={qr} className="max-w-[180px]" />
             </div>
@@ -85,8 +98,12 @@ export default function RootPage() {
                 className="max-w-[80px] dark:bg-accent-foreground px-2 py-1 rounded-lg"
               />
             </div>
-            <div>
+            <div className="flex justify-between items-center w-full">
+              <div>
               <p className="font-medium">Send Package</p>
+              <p className="text-sm font-normal opacity-75">International shipping and local delivery of goods</p>
+              </div>
+              <ArrowRight className="font-medium md:hidden"/>
             </div>
           </div>
          </Card>

@@ -234,7 +234,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent hover:bg-transparent focus:bg-transparent md:translate-x-6 data-[active]:bg-transparent data-[state=open]:bg-transparent p-0 w-fit h-fit">
                 <Button className="dark:text-accent-foreground rounded-[40px] hover:bg-secondary hover:text-primary py-7 duration-200 bg-primary text-accent px-4">
-                  Download App
+                  Login/signup
                 </Button>
               </NavigationMenuTrigger>
               <NavigationMenuContent className="min-w-[250px] py-2">
