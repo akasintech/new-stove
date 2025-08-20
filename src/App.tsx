@@ -20,6 +20,7 @@ import Admin from "./pages/admin.tsx";
 import AdminLogin from "./pages/adminLogin.tsx";
 import Edit from "./pages/Edit.tsx";
 import RootPage from "./pages/rootpage.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 function App() {
    const [adminAuth, setAdminAuth] = useState<boolean | null>(false);
   return (
@@ -42,6 +43,7 @@ function App() {
             <Route path="about-us" element={<AboutPage />} />
             <Route path="blog" element={<BlogPage />} />
             <Route path="blog/:id" element={<Articles />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route
               path="blog/stove/admin/234813649"
               element={<Admin adminAuth={adminAuth} />}

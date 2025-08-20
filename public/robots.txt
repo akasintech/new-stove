@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-user-agent : *
-disallow: /blog/stove/admin/234813649
+User-agent: *
+Disallow: /blog/stove/admin/234813649
+Sitemap: https://stove.com.ng/sitemap.xml

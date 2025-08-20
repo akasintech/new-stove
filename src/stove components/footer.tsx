@@ -81,6 +81,9 @@ export function Footer() {
             <li>
               <a href="#">Whatsapp</a>
             </li>
+            <li>
+              <NavLink to="privacy-policy">Privacy Policy</NavLink>
+            </li>
           </ul>
         </div>
       </div>
