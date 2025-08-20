@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="px-5 py-10 max-w-3xl mx-auto">
+    <div className="px-5 pt-30 pb-10 max-w-3xl mx-auto">
       <Helmet>
         <title>Privacy Policy - Stove</title>
         <meta name="description" content="Stove Privacy Policy explaining what data we collect, how we use it, and your choices." />
