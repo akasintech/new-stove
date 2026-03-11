@@ -48,7 +48,7 @@ export default function Navbar() {
       ref={ref}
       className="w-full flex justify-center items-center px-5 lg:px-10 py-5 absolute top-0 z-[1000] left-0 "
     >
-      <NavigationMenu className="bg-accent shadow-lg z-[1000] rounded-[50px] px-4 lg:w-[90%] md:w-[95%] py-2 w-full flex justify-between items-center max-w-[1220px]">
+      <NavigationMenu className="bg-accent shadow-lg z-[1000] rounded-[50px] px-4 lg:w-[90%] md:w-[95%] py-2 w-full flex justify-between items-center max-w-[1320px]">
         <div className="md:mr-5 lg:mr-10">
           <Link to="/">
             <img
